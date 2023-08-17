@@ -1,0 +1,23 @@
+/*
+ ============================================================================
+ Name        : assignments-lesson-3.c
+ Author      : Mohamed Ahmed Mohamed Osman
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Find ASCII Value of a Character
+ ============================================================================
+ */
+
+#include <stdio.h>
+int main ()
+{
+	char x;
+	printf("Enter a character : ");
+	fflush(stdin);
+	fflush(stdout);
+	scanf("%c" , &x);
+	printf("Ascii value of G = %d" , x);
+
+
+	return 0 ;
+}

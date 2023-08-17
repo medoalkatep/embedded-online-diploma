@@ -1,0 +1,24 @@
+/*
+ ============================================================================
+ Name        : assignments-lesson-3.c
+ Author      : Mohamed Ahmed Mohamed Osman
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Multiply two Floating Point Numbers
+ ============================================================================
+ */
+
+#include <stdio.h>
+int main ()
+{
+	float x , y , product = 0 ;
+	printf("Enter two numbers: ");
+	fflush(stdin) ;
+	fflush(stdout);
+	scanf("%f" "%f" , &x , &y);
+	product = x * y ;
+	printf("product: %f" , product);
+
+
+	return 0 ;
+}

@@ -1,0 +1,23 @@
+/*
+ ============================================================================
+ Name        : assignments-lesson-3.c
+ Author      : Mohamed Ahmed Mohamed Osman
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Print a Integer Entered by a User
+ ============================================================================
+ */
+
+#include <stdio.h>
+int main ()
+{
+	int x ;
+	printf("Enter an integer : ");
+	fflush(stdin) ;
+	fflush(stdout);
+	scanf("%d" , &x);
+	printf("you entered = %d" , x);
+
+
+	return 0 ;
+}

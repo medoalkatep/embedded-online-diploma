@@ -1,0 +1,30 @@
+/*
+ ============================================================================
+ Name        : assignments-lesson-3.c
+ Author      : Mohamed Ahmed Mohamed Osman
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Swap Two Numbers
+ ============================================================================
+ */
+
+#include <stdio.h>
+int main ()
+{
+	float a , b , c ;
+	printf("Enter value of a = ");
+	fflush(stdin);
+	fflush(stdout);
+	scanf("%f" , &a);
+	printf("Enter value of b = ");
+	fflush(stdin);
+	fflush(stdout);
+	scanf("%f" , &b);
+	c = a ;
+	a = b ;
+	b = c ;
+	printf("After swapping , value of a = %f ", a);
+	printf("\nAfter swapping , value of b = %f ", b);
+
+	return 0 ;
+}

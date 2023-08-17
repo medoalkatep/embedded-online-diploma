@@ -1,0 +1,24 @@
+/*
+ ============================================================================
+ Name        : assignments-lesson-3.c
+ Author      : Mohamed Ahmed Mohamed Osman
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Add Two Integers
+ ============================================================================
+ */
+
+#include <stdio.h>
+int main ()
+{
+	int x , y , sum = 0 ;
+	printf("Enter two integers: ");
+	fflush(stdin) ;
+	fflush(stdout);
+	scanf("%d" "%d" , &x , &y);
+	sum = x + y ;
+	printf("Sum: %d" , sum);
+
+
+	return 0 ;
+}
