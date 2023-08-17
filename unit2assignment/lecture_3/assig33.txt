@@ -1,0 +1,35 @@
+/*
+ ============================================================================
+ Name        : assignments-lesson-3.c
+ Author      : Mohamed Ahmed Mohamed Osman
+ Version     :
+ Copyright   : Your copyright notice
+ Description : largest number among three numbers
+ ============================================================================
+ */
+
+#include <stdio.h>
+int main ()
+{
+	float x , y , z;
+	printf("Enter three numbers : ");
+	fflush(stdin);
+	fflush(stdout);
+	scanf("%f %f %f" , &x , &y , &z);
+	if (x > y)
+	{
+		if(x > z )
+			printf("%f is the largest number " , x);
+		else
+			printf("%f is the largest number " , z);
+	}
+	else
+	{
+		if (y > z)
+			printf("%f is the largest number " , y);
+		else
+			printf("%f is the largest number " , z);
+	}
+	return 0 ;
+}
+

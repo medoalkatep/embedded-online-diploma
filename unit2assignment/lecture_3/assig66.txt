@@ -1,0 +1,31 @@
+/*
+ ============================================================================
+ Name        : assignments-lesson-3.c
+ Author      : Mohamed Ahmed Mohamed Osman
+ Version     :
+ Copyright   : Your copyright notice
+ Description : sum of natural numbers
+ ============================================================================
+ */
+
+#include <stdio.h>
+int main ()
+{
+	int x , sum=0 ;
+	printf("Enter a number : ");
+	fflush(stdin);
+	fflush(stdout);
+	scanf("%d" , &x );
+	if ( x <= 0 )
+		printf("%d is not a natural number" , x);
+	else
+	{
+		for (int i =1 ; i<=x ; i++)
+		{
+			sum += i ;
+		}
+		printf("Sum = %d " , sum );
+	}
+
+	return 0 ;
+}

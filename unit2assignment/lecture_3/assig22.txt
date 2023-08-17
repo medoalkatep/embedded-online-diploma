@@ -1,0 +1,30 @@
+/*
+ ============================================================================
+ Name        : assignments-lesson-3.c
+ Author      : Mohamed Ahmed Mohamed Osman
+ Version     :
+ Copyright   : Your copyright notice
+ Description : check vowel or consonant
+ ============================================================================
+ */
+
+#include <stdio.h>
+int main ()
+{
+	char x ;
+	printf("Enter the character you want to check : ");
+	fflush(stdin);
+	fflush(stdout);
+	scanf("%c" , &x);
+	if(x == 'a' || x == 'i' || x == 'u'|| x == 'o'||x == 'e'
+			||x == 'A' || x == 'I' || x == 'U'|| x == 'O'|| x == 'E')
+	{
+		printf("%c is a vowel " , x);
+	}
+	else
+	{
+		printf("%c is a consonant " , x);
+	}
+
+	return 0 ;
+}

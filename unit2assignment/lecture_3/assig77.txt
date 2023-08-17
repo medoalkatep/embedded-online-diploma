@@ -1,0 +1,31 @@
+/*
+ ============================================================================
+ Name        : assignments-lesson-3.c
+ Author      : Mohamed Ahmed Mohamed Osman
+ Version     :
+ Copyright   : Your copyright notice
+ Description : factorial of a number
+ ============================================================================
+ */
+
+#include <stdio.h>
+int main ()
+{
+	int x , factorial = 1 ;
+	printf("Enter a number : ");
+	fflush(stdin);
+	fflush(stdout);
+	scanf("%d" , &x );
+	if ( x < 0 )
+		printf("Error!! Factorial of negative numbers doesn't exist " , x);
+	else
+	{
+		for (int i =1 ; i<=x ; i++)
+		{
+			factorial *= i ;
+		}
+		printf("factorial = %d " , factorial );
+	}
+
+	return 0 ;
+}

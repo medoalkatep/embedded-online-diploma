@@ -1,0 +1,25 @@
+/*
+ ============================================================================
+ Name        : assignments-lesson-3.c
+ Author      : Mohamed Ahmed Mohamed Osman
+ Version     :
+ Copyright   : Your copyright notice
+ Description : character is an alphabet
+ ============================================================================
+ */
+
+#include <stdio.h>
+int main ()
+{
+	char x ;
+	printf("Enter a character : ");
+	fflush(stdin);
+	fflush(stdout);
+	scanf("%c" , &x );
+	if ( x >='a' && x <='z' || x >='A' && x <= 'Z' )
+		printf("%c is an alphabet" , x);
+	else
+		printf("character is not an alphabet ");
+
+	return 0 ;
+}
