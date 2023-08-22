@@ -1,0 +1,31 @@
+/*
+ ============================================================================
+ Name        : assignments-lesson-3.c
+ Author      : Mohamed Ahmed Mohamed Osman
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Frequency of an element in a string
+ ============================================================================
+ */
+
+#include <stdio.h>
+int main ()
+{
+	char x [100] ;
+	char y ;
+	int freq = 0 , i  ;
+	printf("Enter a string :");
+	fflush(stdin);  fflush(stdout);
+	gets(x);
+	printf("Enter a character to find frequency : ");
+	fflush(stdin);  fflush(stdout);
+	scanf("%c",&y);
+	for (i = 0 ; x[i] != '\0' ; i++ )
+	{
+		if (x[i] == y)
+			freq ++ ;
+	}
+	printf("Frequency of %c = %d ",y , freq);
+
+	return 0 ;
+}

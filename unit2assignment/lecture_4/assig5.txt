@@ -1,0 +1,36 @@
+/*
+ ============================================================================
+ Name        : assignments-lesson-3.c
+ Author      : Mohamed Ahmed Mohamed Osman
+ Version     :
+ Copyright   : Your copyright notice
+ Description : search an element in an array
+ ============================================================================
+ */
+
+#include <stdio.h>
+int main ()
+{
+	int n , i , num , loc ;
+	printf("Enter no of elements : ");
+	fflush(stdin);  fflush(stdout);
+	scanf("%d",&n);
+	int x[n];
+	for(i = 0 ; i<n ; i++)
+	{
+		scanf("%d",&x[i]);
+	}
+	printf("Enter element to be searched : ");
+	fflush(stdin);  fflush(stdout);
+	scanf("%d",&num);
+	for(i = 0 ; i < n ; i++)
+	{
+		if (x[i]== num){
+			loc= i+1 ;
+			break ;
+		}
+	}
+	printf("number found at the location : %d" , loc);
+
+	return 0 ;
+}

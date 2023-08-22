@@ -1,0 +1,49 @@
+/*
+ ============================================================================
+ Name        : assignments-lesson-3.c
+ Author      : Mohamed Ahmed Mohamed Osman
+ Version     :
+ Copyright   : Your copyright notice
+ Description : The transpose of a matrix
+ ============================================================================
+ */
+
+#include <stdio.h>
+int main ()
+{
+	int  r , c  , ro , col ;
+	printf("Enter rows and columns of the matrix :");
+	fflush(stdin);  fflush(stdout);
+	scanf("%d %d",&ro,&col);
+	int x [ro][col];
+	int y [ro][col];
+	printf("Enter elements of matrix :\n");
+	for (r = 0 ; r <ro ; r++ )
+	{
+		for(c = 0 ; c < col ; c++)
+		{
+			printf("Enter element a%d%d : ", r+1 , c+1);
+			fflush(stdin);  fflush(stdout);
+			scanf("%d",&x[r][c]);
+		}
+	}
+	for (r = 0 ; r <ro ; r++ )
+	{
+		for(c = 0 ; c < col ; c++)
+		{
+			y[c][r]=x[r][c];
+		}
+	}
+	printf("The transpose matrix is :\n");
+	for (r = 0 ; r <ro ; r++ )
+	{
+		for(c = 0 ; c < col ; c++)
+		{
+			printf("%d\t ", y[c][r]);
+		}
+		printf("\n");
+	}
+
+
+	return 0 ;
+}

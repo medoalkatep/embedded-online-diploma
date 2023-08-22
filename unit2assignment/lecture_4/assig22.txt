@@ -1,0 +1,23 @@
+/*
+ ============================================================================
+ Name        : assignments-lesson-4.c
+ Author      : Mohamed Ahmed Mohamed Osman
+ Version     :
+ Copyright   : Your copyright notice
+ Description : length of a string
+ ============================================================================
+ */
+
+#include <stdio.h>
+int main ()
+{
+	char x [100] ;
+	int  i  ;
+	printf("Enter a string :");
+	fflush(stdin);  fflush(stdout);
+	gets(x);
+	for (i = 0 ; x[i] != '\0' ; i++ );
+	printf("Length of string = %d " , i);
+
+	return 0 ;
+}

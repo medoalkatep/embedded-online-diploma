@@ -1,0 +1,51 @@
+/*
+ ============================================================================
+ Name        : assignments-lesson-3.c
+ Author      : Mohamed Ahmed Mohamed Osman
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Sum of two matrix
+ ============================================================================
+ */
+
+#include <stdio.h>
+int main ()
+{
+	float x [2][2];
+	float y [2][2];
+	float z [2][2];
+	int r , c ;
+	printf("Enter the elements of the first matrix :\r\n");
+	for(r = 0 ; r <2 ; r++)
+	{
+		for(c = 0 ; c <2 ; c++)
+		{
+			printf("Enter the %d %d :",r+1,c+1);
+			fflush(stdin);   fflush(stdout);
+			scanf("%f",&x[r][c]);
+		}
+	}
+	printf("Enter the elements of the second matrix :\r\n");
+	for(r = 0 ; r <2 ; r++)
+	{
+		for(c = 0 ; c <2 ; c++)
+		{
+			printf("Enter the %d %d :",r+1,c+1);
+			fflush(stdin);   fflush(stdout);
+			scanf("%f",&y[r][c]);
+		}
+	}
+	printf("The sum of the matrixes = \n");
+	for(r = 0 ; r <2 ; r++)
+	{
+		for(c = 0 ; c <2 ; c++)
+		{
+			z[r][c]= x[r][c] + y[r][c];
+			printf("%.1f\t" , z[r][c]);
+		}
+		printf("\n");
+	}
+
+
+	return 0 ;
+}

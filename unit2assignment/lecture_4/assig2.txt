@@ -1,0 +1,32 @@
+/*
+ ============================================================================
+ Name        : assignments-lesson-3.c
+ Author      : Mohamed Ahmed Mohamed Osman
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Average of elements of a matrix
+ ============================================================================
+ */
+
+#include <stdio.h>
+int main ()
+{
+	float avg , sum =0;
+	int n , i ;
+	printf("Enter the number of data :");
+	fflush(stdin);  fflush(stdout);
+	scanf("%d",&n);
+	float x [n];
+	for(i = 0 ; i <n ; i++)
+	{
+		printf("%d. Enter number :",i+1);
+		fflush(stdin);  fflush(stdout);
+		scanf("%f",&x[i]);
+		sum += x[i];
+	}
+	avg = sum / n ;
+	printf("Average : %.2f",avg);
+
+
+	return 0 ;
+}

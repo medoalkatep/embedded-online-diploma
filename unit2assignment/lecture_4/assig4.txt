@@ -1,0 +1,41 @@
+/*
+ ============================================================================
+ Name        : assignments-lesson-3.c
+ Author      : Mohamed Ahmed Mohamed Osman
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Insert an element in a matrix
+ ============================================================================
+ */
+
+#include <stdio.h>
+int main ()
+{
+	int n , i , num , loc;
+	printf("Enter no of elements : ");
+	fflush(stdin);  fflush(stdout);
+	scanf("%d",&n);
+	int x[n];
+	for(i = 0 ; i<n ; i++)
+	{
+		scanf("%d",&x[i]);
+	}
+	printf("Enter element to be inserted : ");
+	fflush(stdin);  fflush(stdout);
+	scanf("%d",&num);
+	printf("Enter the location : ");
+	fflush(stdin);  fflush(stdout);
+	scanf("%d",&loc);
+	n++;
+	for(i =  n-1; i>=loc ; i--)   // shift the elements of the array 1 position forward
+	{
+		x[i]=x[i-1];
+	}                            // now the value of the location in the array is empty 
+	x[loc-1]= num;
+	for(i =  0; i<n ; i++)
+	{
+		printf("%d" , x[i]);
+	}
+
+	return 0 ;
+}

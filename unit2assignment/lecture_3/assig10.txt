@@ -1,0 +1,27 @@
+/*
+ ============================================================================
+ Name        : assignments-lesson-3.c
+ Author      : Mohamed Ahmed Mohamed Osman
+ Version     :
+ Copyright   : Your copyright notice
+ Description :product of 4 int
+ ============================================================================
+ */
+
+#include <stdio.h>
+int main ()
+{
+	int i  ,prod=1,num;
+	for(i = 1 ; i<=4  ;i++)
+	{
+		printf("Enter n%d : ",i);
+		fflush(stdin); fflush(stdout);
+		scanf("%d" , &num);
+		if(num==0)
+			continue;
+		prod *= num;
+
+	}
+	printf("the product = %d" , prod) ;
+	return 0 ;
+}
