@@ -1,0 +1,40 @@
+/*
+ ============================================================================
+ Name        : assignments-lesson-5.c
+ Author      : Mohamed Ahmed Mohamed Osman
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Prime numbers between two intervals
+ ============================================================================
+ */
+
+#include <stdio.h>
+int prime(int x )
+{
+	int j , z = 1 ;
+	for(j = 2 ; j < x/2 ; j++)
+	{
+		if (x % j == 0)
+		{
+			z = 0 ;
+			break ;
+		}
+	}
+	return z  ;
+}
+int main ()
+{
+	int a , b , i , z;
+	printf("Enter two numbers (intervals) : ");
+	fflush(stdin);      fflush(stdout);
+	scanf("%d %d",&a , &b);
+	printf("Prime numbers between %d and %d are : ",a,b);
+	for (i = a+1 ; i < b ; i++)
+	{
+		z = prime(i);
+		if (z == 1 )
+			printf("%d  ",i );
+	}
+
+	return 0 ;
+}

@@ -1,0 +1,28 @@
+/*
+ ============================================================================
+ Name        : assignments-lesson-5.c
+ Author      : Mohamed Ahmed Mohamed Osman
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Factorial of a number using recursion
+ ============================================================================
+ */
+
+#include <stdio.h>
+int fact (int x );
+int main ()
+{
+	int a ;
+	printf("Enter a positive integer : ");
+	fflush(stdin);      fflush(stdout);
+	scanf("%d",&a );
+	printf("Factorial of %d is : %d",a,fact(a));
+
+	return 0 ;
+}
+int fact (int x)
+{
+	if (x != 1)
+		x *= fact(x-1) ;
+	return x ;
+}

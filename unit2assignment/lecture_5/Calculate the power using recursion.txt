@@ -1,0 +1,31 @@
+/*
+ ============================================================================
+ Name        : assignments-lesson-5.c
+ Author      : Mohamed Ahmed Mohamed Osman
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Calculate the power using recursion
+ ============================================================================
+ */
+
+#include <stdio.h>
+int power (int x , int y );
+int main ()
+{
+	int x , y ;
+	printf("Enter base number : ");
+	fflush(stdin);     fflush(stdout);
+	scanf("%d",&x);
+	printf("Enter power number : ");
+	fflush(stdin);     fflush(stdout);
+	scanf("%d",&y);
+	printf("%d ^ %d = %d",x,y,power(x,y));
+	return 0 ;
+}
+int power (int x , int y )
+{
+	if(y != 0)
+		return (x*power(x,y-1));
+	else
+		return 1;
+}

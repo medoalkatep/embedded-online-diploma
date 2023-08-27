@@ -1,0 +1,30 @@
+/*
+ ============================================================================
+ Name        : assignments-lesson-5.c
+ Author      : Mohamed Ahmed Mohamed Osman
+ Version     :
+ Copyright   : Your copyright notice
+ Description : reverse a sentence using recursion
+ ============================================================================
+ */
+
+#include <stdio.h>
+void reve();
+int main ()
+{
+	printf("Enter a sentence : ");
+	fflush(stdin) ; fflush(stdout);
+	reve();
+
+	return 0 ;
+}
+void reve()
+{
+	char c ;
+	scanf("%c",&c);
+	if (c != '\n')
+	{
+		reve();
+		printf("%c",c);
+	}
+}
