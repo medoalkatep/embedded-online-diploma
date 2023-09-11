@@ -1,0 +1,12 @@
+Name        : assignments-lesson-6.c
+Author      : Mohamed Ahmed Mohamed Osman
+Version     :
+Copyright   : Your copyright notice
+Description : Write the output of this program
+
+
+ Output
+
+
+     size of union =32
+     size of structure=40

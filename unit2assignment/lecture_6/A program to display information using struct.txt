@@ -1,0 +1,38 @@
+/*
+ ============================================================================
+ Name        : assignments-lesson-6.c
+ Author      : Mohamed Ahmed Mohamed Osman
+ Version     :
+ Copyright   : Your copyright notice
+ Description : A program to display information using struct
+ ============================================================================
+ */
+
+#include <stdio.h>
+struct info
+{
+	char name[50] ;
+	int roll ;
+	float marks ;
+
+};
+int main ()
+{
+	struct info information ;
+	printf("Enter information of students : \n\n");
+	fflush(stdin) ;      fflush(stdout) ;
+	printf("Enter name : ");
+	fflush(stdin) ;      fflush(stdout) ;
+	scanf("%s",information.name);
+	printf("Enter roll number : ");
+	fflush(stdin) ;      fflush(stdout) ;
+	scanf("%d",&information.roll);
+	printf("Enter marks : ");
+	fflush(stdin) ;      fflush(stdout) ;
+	scanf("%f",&information.marks);
+	printf("Displaying information :\n\n ");
+	fflush(stdin) ;      fflush(stdout) ;
+	printf("Name : %s\n roll : %d\n marks: %.2f\n ",information.name,information.roll,information.marks);
+
+	return 0 ;
+}

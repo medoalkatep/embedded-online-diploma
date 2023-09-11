@@ -1,0 +1,46 @@
+/*
+ ============================================================================
+ Name        : assignments-lesson-6.c
+ Author      : Mohamed Ahmed Mohamed Osman
+ Version     :
+ Copyright   : Your copyright notice
+ Description : A program to add two distances using structures
+ ============================================================================
+ */
+
+#include <stdio.h>
+struct dist
+{
+	int feet ;
+	float inch ;
+};
+int main ()
+{
+	struct dist x , y , sum ;
+	printf("Enter information of 1st distance : \n\n");
+	fflush(stdin) ;      fflush(stdout) ;
+	printf("Enter feet : ");
+	fflush(stdin) ;      fflush(stdout) ;
+	scanf("%d",&x.feet);
+	printf("Enter inch : ");
+	fflush(stdin) ;      fflush(stdout) ;
+	scanf("%f",&x.inch);
+	printf("Enter information of 2ed distance : \n\n");
+	fflush(stdin) ;      fflush(stdout) ;
+	printf("Enter feet : ");
+	fflush(stdin) ;      fflush(stdout) ;
+	scanf("%d",&y.feet);
+	printf("Enter inch : ");
+	fflush(stdin) ;      fflush(stdout) ;
+	scanf("%f",&y.inch);
+	sum.feet = x.feet + y.feet ;
+	sum.inch = x.inch + y.inch ;
+	if(sum.inch>12)
+	{
+		sum.feet++ ;
+		sum.inch = sum.inch-12 ;
+	}
+	printf("Sum of distances : %d'-%.1f\" ",sum.feet,sum.inch);
+	fflush(stdin) ;      fflush(stdout) ;
+	return 0 ;
+}

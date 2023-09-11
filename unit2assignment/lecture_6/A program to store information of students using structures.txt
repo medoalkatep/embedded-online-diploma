@@ -1,0 +1,46 @@
+/*
+ ============================================================================
+ Name        : assignments-lesson-6.c
+ Author      : Mohamed Ahmed Mohamed Osman
+ Version     :
+ Copyright   : Your copyright notice
+ Description : A program to store information of students using structures 
+ ============================================================================
+ */
+
+#include <stdio.h>
+struct students
+{
+	char name[50] ;
+	int roll ;
+	float marks ;
+};
+int main ()
+{
+	struct students x[10] ;
+	int i ;
+	printf("Enter information of students :\n\n");
+	fflush(stdin) ;      fflush(stdout) ;
+	for(i = 0 ; i < 10 ; i++)
+	{
+		printf("for roll number ");
+		fflush(stdin) ;      fflush(stdout) ;
+		scanf("%d",&x[i].roll);
+		printf("Enter name :");
+		fflush(stdin) ;      fflush(stdout) ;
+		scanf("%s",x[i].name);
+		printf("Enter marks :");
+		fflush(stdin) ;      fflush(stdout) ;
+		scanf("%f",&x[i].marks);
+	}
+	for(i = 0 ; i < 10 ; i++)
+	{
+		printf("information for roll number %d : \n",i+1);
+		fflush(stdin) ;      fflush(stdout) ;
+		printf("Name : %s\n",x[i].name);
+		fflush(stdin) ;      fflush(stdout) ;
+		printf("Marks : %.1f\n",x[i].marks);
+		fflush(stdin) ;      fflush(stdout) ;
+	}
+	return 0 ;
+}

@@ -1,6 +1,6 @@
 /*
  ============================================================================
- Name        : assignments-lesson-3.c
+ Name        : assignments-lesson-4.c
  Author      : Mohamed Ahmed Mohamed Osman
  Version     :
  Copyright   : Your copyright notice

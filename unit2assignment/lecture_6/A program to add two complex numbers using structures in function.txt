@@ -1,0 +1,37 @@
+/*
+ ============================================================================
+ Name        : assignments-lesson-6.c
+ Author      : Mohamed Ahmed Mohamed Osman
+ Version     :
+ Copyright   : Your copyright notice
+ Description : A program to add two complex numbers using structures in function
+ ============================================================================
+ */
+
+#include <stdio.h>
+struct complex
+{
+	float real ;
+	float imag ;
+};
+struct complex add(struct complex x ,struct complex y )
+{
+	struct complex sum ;
+	sum.real = x.real + y.real ;
+	sum.imag = x.imag + y.imag ;
+	return sum ;
+}
+int main ()
+{
+	struct complex x , y , sum ;
+	printf("For 1st complex number \nEnter real and imaginary parts respectively :");
+	fflush(stdin) ;      fflush(stdout) ;
+	scanf("%f %f",&x.real ,&x.imag);
+	printf("For 2ed complex number \nEnter real and imaginary parts respectively :");
+	fflush(stdin) ;      fflush(stdout) ;
+	scanf("%f %f",&y.real ,&y.imag);
+	sum = add(x,y) ;
+	printf("Sum = %.1f + %.1fi",sum.real,sum.imag);
+	fflush(stdin) ;      fflush(stdout) ;
+	return 0 ;
+}

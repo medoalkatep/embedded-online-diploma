@@ -1,0 +1,27 @@
+/*
+ ============================================================================
+ Name        : assignments-lesson-6.c
+ Author      : Mohamed Ahmed Mohamed Osman
+ Version     :
+ Copyright   : Your copyright notice
+ Description : A program to find area of a circle passing arguments to macros
+ ============================================================================
+ */
+
+#include <stdio.h>
+#define pi 3.1415
+#define area(r)(pi * r * r)
+int main ()
+{
+	int radius ;
+	float area ;
+	printf("Enter the radius :");
+	fflush(stdin) ;      fflush(stdout) ;
+	scanf("%d",&radius);
+	area = area(radius);
+	printf("Area = %.2f",area);
+	fflush(stdin) ;      fflush(stdout) ;
+
+
+	return 0 ;
+}
