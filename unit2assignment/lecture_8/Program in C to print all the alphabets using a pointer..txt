@@ -1,0 +1,25 @@
+/*
+ ============================================================================
+ Name        : assignments-lesson-8.c
+ Author      : Mohamed Ahmed Mohamed Osman
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Program in C to print all the alphabets using a pointer.
+ ============================================================================
+ */
+
+#include <stdio.h>
+int main ()
+{
+	char i ;
+	char* ch =&i ;
+	printf("The Alphabets are :\n");
+	fflush(stdin);       fflush(stdout);
+	for(i = 65 ; i <=90 ; i++)
+	{
+		printf("%c    ",*ch);
+		fflush(stdin);       fflush(stdout);
+	}
+
+	return 0 ;
+}

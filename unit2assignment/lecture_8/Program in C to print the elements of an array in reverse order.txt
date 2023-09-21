@@ -1,0 +1,38 @@
+/*
+ ============================================================================
+ Name        : assignments-lesson-8.c
+ Author      : Mohamed Ahmed Mohamed Osman
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Program in C to print the elements of an array in reverse order.
+ ============================================================================
+ */
+
+#include <stdio.h>
+int main ()
+{
+	int arr[15], s , i , j ;
+	int* p = arr ;
+	printf("Input the number of elements to store in the array (max 15) : ");
+	fflush(stdin);       fflush(stdout);
+	scanf("%d" , &s);
+	printf("Input %d number of elements in the array : \n", s);
+	fflush(stdin);       fflush(stdout);
+	for (i = 0 ; i <= s-1 ; i ++)
+	{
+		printf("element - %d : " , i+1);
+		fflush(stdin);       fflush(stdout);
+		scanf("%d" , &arr[i]);
+	}
+	printf("The elements of array in reverse order are : \n");
+	fflush(stdin);       fflush(stdout);
+	for (j = s-1 ; j >= 0 ; j--)
+	{
+		p += j ;
+		printf("element - %d : %d\n" , j+1 ,*p );
+		fflush(stdin);       fflush(stdout);
+		p = arr ;
+	}
+
+	return 0 ;
+}

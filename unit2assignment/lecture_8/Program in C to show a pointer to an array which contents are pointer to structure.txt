@@ -1,0 +1,28 @@
+/*
+ ============================================================================
+ Name        : assignments-lesson-8.c
+ Author      : Mohamed Ahmed Mohamed Osman
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Program in C to show a pointer to an array which contents are pointer to structure
+ ============================================================================
+ */
+
+#include <stdio.h>
+struct employee
+{
+	char name[50] ;
+	int id ;
+};
+int main ()
+{
+	struct employee info[3] = { {"mohamed",1003} , {"Alex",1002} , {"ali",1004}} ;
+	struct employee* p ;
+	p = info ;
+	p++ ;
+	printf("Employee Name : %s\nEmployee ID : %d", p->name , p->id) ;
+
+
+
+	return 0 ;
+}
